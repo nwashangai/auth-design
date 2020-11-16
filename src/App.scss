@@ -1,0 +1,20 @@
+@import 'sass-rem';
+@import './assets/variables';
+
+.App {
+  position: relative;
+  background: map-get($palette, bg);
+  height: 100vh;
+  margin: 0;
+}
+
+@media (max-width: rem(946px)) {
+  .App {
+    margin: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  background: transparent; /* make scrollbar transparent */
+  width: 0;
+}
